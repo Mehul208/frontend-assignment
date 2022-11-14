@@ -1,0 +1,28 @@
+.productCard {
+    width: calc(100% / 2);
+    height: 14rem;
+    transition: all 0.15s ease-in-out;
+    background-color: white;
+    cursor: pointer;
+}
+.productCard:hover {
+    transform: scale(1.1);
+}
+.productCard:hover a {
+    color: rgba(96, 35, 209, 0.6);
+}
+._pcid {
+    height: 10.5rem;
+}
+._pcid div a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: none;
+    transition: 0.2s ease-in-out;
+}
+@media screen and (min-width: 720px) {
+    .productCard {
+        width: 13rem;
+    }
+}
