@@ -1,0 +1,29 @@
+.prdc_img img {
+    max-width: 120px;
+}
+.mybtn {
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #055160;
+    color: white;
+    font-weight: 500;
+    margin: 10px auto;
+}
+.bt2 {
+    color: #055160;
+    background-color: white;
+    border: 3px solid #055160;
+    margin: 0;
+    padding: 8px 0;
+    transition: 0.2s ease-in-out;
+}
+.bt2:hover {
+    color: white;
+    background-color: #055160;
+}
+.bt2:focus {
+    transform: scale(0.95);
+}

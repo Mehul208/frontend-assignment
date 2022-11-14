@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-const ProductCard = ({ title, image }) => {
+import { Link } from "react-router-dom";
+const ProductCard = ({ id, title, image }) => {
     const [inCart, setInCart] = useState(0);
     const handleClick = () => {
         setInCart(inCart + 1);
@@ -13,11 +14,11 @@ const ProductCard = ({ title, image }) => {
                     <img src={image} alt="" width="100px" height="100px" />
                 </div>
                 <div className="px-2 overflow-hidden">
-                    <a href="#item">
+                    <Link to={`/product/${id}`}>
                         {title.length > 40
                             ? title.slice(0, 40).concat("...")
                             : title}
-                    </a>
+                    </Link>
                 </div>
             </div>
             <Button
