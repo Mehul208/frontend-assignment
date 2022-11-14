@@ -1,4 +1,6 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { cartActions } from "../../store/cart-slice";
 
 const ProductDetailCard = ({
     category,
@@ -9,6 +11,10 @@ const ProductDetailCard = ({
     rating,
     title,
 }) => {
+    const dispatch = useDispatch();
+    const handleClick = () => {
+        dispatch(cartActions.addToCart({ id: id, price: price }));
+    };
     return (
         <div className="p-3">
             <h3>{title} </h3>
@@ -24,10 +30,15 @@ const ProductDetailCard = ({
                 From {rating.count} customers
             </small>
             <p className="py-2">{description}</p>
-            <button className="mybtn">Add to Cart</button>
-            <button className="mybtn bt2">
-                Buy Now
+            <button
+                className="mybtn"
+                onClick={() => {
+                    handleClick();
+                }}
+            >
+                Add to Cart
             </button>
+            <button className="mybtn bt2">Buy Now</button>
         </div>
     );
 };

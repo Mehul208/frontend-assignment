@@ -1,0 +1,12 @@
+.ccrd{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0px 0px 4px grey;
+    padding: 20px 0;
+}
+
+.ccrd h6 img {
+    max-width: 100px;
+}
