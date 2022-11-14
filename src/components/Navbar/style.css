@@ -1,0 +1,29 @@
+.nvbr {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkslategrey;
+    align-items: center;
+}
+.nv_logo {
+    padding: 0 20px;
+    color: white;
+    letter-spacing: 0.9px;
+}
+.nv_nav ul {
+    display: flex;
+    margin: 0;
+    padding-right: 20px;
+}
+.nv_nav ul li {
+    list-style: none;
+    color: rgb(206, 206, 206);
+    padding: 20px 5px;
+}
+.nv_nav ul li a {
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+    transition: 0.2s all ease-in-out;
+}
+.nv_nav ul li a:hover {
+    color: rgb(240, 239, 239);
+}
